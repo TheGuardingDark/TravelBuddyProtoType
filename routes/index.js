@@ -26,9 +26,9 @@ router.get('/comingSoon', function (req, res, next) {
 
 router.get('/tripDetails', function (req, res, next) {
   db.Trip.findAll({
-    where: {
-      userId: req.user.id
-    }
+    // where: {
+    //   userId: req.user.id
+    // }
   }).then(function (trips) {
     res.render('travelInfoForm.pug', {title: pageTitle, trips: trips});
   }).catch(function (err) {
@@ -54,9 +54,9 @@ router.get('/lodgingForm', function (req, res, next) {
 
 router.get('/allTrips', function (req, res, next) {
   db.Trip.findAll({
-    where: {
-      userId: req.user.id
-    },
+    // where: {
+    //   userId: req.user.id
+    // },
     include: [
       {
         model: db.Flight

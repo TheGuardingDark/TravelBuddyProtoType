@@ -22,7 +22,9 @@ $(document).ready(function () {
         tripName: $('#firstName').val().trim(),
         startDate: $('#startDate').val().trim(),
         endDate: $('#endDate').val().trim(),
-        userId: $('#user.id')
+        tripNotes: $('#tripNotes').val().trim(),
+        // userId: $('#user.id')
+        userId: 1
       };
 
       $.post('/api/trips', newTrip).then(function (res) {

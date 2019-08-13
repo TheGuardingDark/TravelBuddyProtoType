@@ -1,9 +1,8 @@
 {
-  "name": "auth0-nodejs-webapp-sample-new-test",
+  "name": "travel_buddy",
   "version": "0.0.0",
-  "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./server"
   },
   "dependencies": {
     "acorn": "^6.2.1",
@@ -19,8 +18,6 @@
     "morgan": "~1.9.0",
     "mysql": "^2.17.1",
     "mysql2": "^1.6.5",
-    "passport": "^0.4.0",
-    "passport-auth0": "^1.2.0",
     "path": "^0.12.7",
     "popper.js": "^1.15.0",
     "pug": "2.0.3",

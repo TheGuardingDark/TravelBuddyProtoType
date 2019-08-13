@@ -25,7 +25,9 @@ module.exports = function (sequelize, DataTypes) {
     },
     userId: {
       type: DataTypes.STRING,
-      allowNull: false
+      // allowNull: false
+      allowNull: true,
+      defaultValue: 1
     }
 
   });
