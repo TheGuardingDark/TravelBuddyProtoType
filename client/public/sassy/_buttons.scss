@@ -1,0 +1,15 @@
+@import "text";
+@import "colors";
+
+.button {
+    float: center ;
+    margin-top: 15px;
+    background-color: $secondary-color;
+    color: $primary-textcolor;
+    font-family: $primaryfont-family;
+    font-size: 15px;
+    &:hover {
+        color: $quinary;
+        background-color: $secondarybg;
+    }
+}
